@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import Header from '../../components/Header';
+import { Header } from '../../components/Header';
 import api from '../../services/api';
 import { Food } from '../../components/Food';
 import ModalAddFood from '../../components/ModalAddFood';
@@ -63,7 +63,7 @@ export function Dashboard() {
     setFoods(foodsFiltered);
   }
 
-  async function toggleModal() {
+  function toggleModal() {
     setModalOpen(!modalOpen);
   }
 
